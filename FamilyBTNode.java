@@ -1,35 +1,17 @@
 
-public class BSTNode {
-  // values
+public class FamilyBTNode {
+  //values
   
-  BSTNode(char inVal){
-    
-  }
-
-  public boolean find(char inVal) {
-    return false;
-  }
-  
-  public void insert(char inVal) {
+  FamilyBTNode(String inFirst, String inLast){
     
   }
   
-
-  public BSTNode findMin() {
+  public String relationship(FamilyBTNode inNode, int levels) {
     return null;
   }
-  
-  public void remove(char inVal) {
-    
-  }
-  
-  
-  public int height() {
-    return 0;
-  }
-  
-  public int depth(char inVal) {
-    return 0;
+
+  public boolean inSubtree(FamilyBTNode inNode) {
+    return false;
   }
   
   public void print() { print(""); }

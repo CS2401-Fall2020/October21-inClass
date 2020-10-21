@@ -2,32 +2,35 @@
 public class driver {
 
   public static void main(String[] args) {
+
+    // TODO Auto-generated method stub
+    FamilyBTNode root = new FamilyBTNode("Kylo", "Ren");
+    /*root.mother = new FamilyBTNode("Princess","Leia");
+    root.father = new FamilyBTNode("Han","Solo");
+    root.mother.mother = new FamilyBTNode("Queen","Padme");
+    root.mother.father = new FamilyBTNode("Anakin","Skywalker");
+    root.mother.father.mother = new FamilyBTNode("Shimi", "Skywalker");
+    root.mother.mother.mother = new FamilyBTNode("Jobal","Naberrie");
+    root.mother.mother.father = new FamilyBTNode("Ruweee","Naberrie");
+    root.mother.mother.father.father = new FamilyBTNode("Who","Knows");
     
-    BSTNode root = new BSTNode('d');
-    root.insert('b');
-    root.insert('f');
-    root.insert('a');
-    root.insert('c');
-    root.insert('e');
-    root.insert('h');
     root.print();
-    System.out.println("Height: " + root.height());
-    System.out.print("Find: ");
-    for(char i='a'-1; i<='i'; i++) {
-      System.out.print(i + ":" + root.find(i) + ",");
-    }
-    System.out.println();
-    System.out.print("Depth: ");
-    for(char i='a'-1; i<='i'; i++) {
-      System.out.print(i + ":" + root.depth(i) + ",");
-    }
-    System.out.println();
-    root.remove('a');
-    System.out.println("After remove 'a': ");
-    root.print();
-    root.remove('c');
-    System.out.println("After remove 'c': ");
-    root.print();
+    
+    System.out.println(root.mother.firstName + " in " + root.firstName  + ": " + root.inSubtree(root.mother));
+    System.out.println(root.mother.firstName + " in " + root.father.firstName  + ": " + root.father.inSubtree(root.mother));
+    System.out.println(root.father.father + " in " + root.father.firstName  + ": " + root.father.inSubtree(root.father.father));
+    
+    // should print "Kylo > Princess: Mother"
+    System.out.println(root.firstName + ">" + root.mother.firstName + ": " + root.relationship(root.mother, 0));
+    System.out.println(root.mother.firstName + ">" + root.mother.father.firstName + ": " + root.mother.relationship(root.mother.father, 0)); 
+    System.out.println(root.firstName + ">" + root.mother.mother.firstName + ": " + root.relationship(root.mother.mother, 0));
+
+    System.out.println(root.firstName + ">" + root.mother.mother.father.firstName + ": " + root.relationship(root.mother.mother.father, 0));
+    System.out.println(root.firstName + ">" + root.mother.mother.father.father.firstName + ": " + root.relationship(root.mother.mother.father.father, 0));
+    //root.mother root.mother.father.mother
+    System.out.println(root.mother.firstName + ">" + root.mother.father.mother.firstName + ": " + root.mother.relationship(root.mother.father.mother, 0));
+    System.out.println(root.father.firstName + ">" + root.mother.mother.firstName + ": " + root.father.relationship(root.mother.mother,0));
+    */
   }
 
 }
